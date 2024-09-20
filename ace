@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const { Ignitor } = require('@adonisjs/core/build/src/Ignitor')
+new Ignitor(__dirname)
+  .httpServer()
+  .start()
+  .catch(console.error)
